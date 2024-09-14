@@ -1,0 +1,326 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    height: 2px;
+    background-color: #e0e0e0;
+    border: none;
+    margin: 20px 0;
+}
+
+/* Login */
+.auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #0073e6;
+}
+
+.auth form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.auth form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fafafa;
+}
+
+.auth form input:focus {
+    outline: none;
+    border-color: #0073e6;
+}
+
+/* Header */
+.header .container {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 1500px;
+}
+
+.header .logo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.header .links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header .links span {
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.header .links span:hover {
+    background-color: #0073e6;
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link h6 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Homepage */
+.home .posts {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.home .post {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.home .post:hover {
+    transform: translateY(-5px);
+}
+
+.home .post .img img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.home .post .content button {
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #909498;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.home .post .content button:hover {
+    background-color: #005bb5;
+}
+
+/* Single Post */
+.single {
+    display: flex;
+    gap: 50px;
+}
+
+.single .content {
+    flex: 5;
+}
+
+.single .content img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.single .user {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.single .user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.single .user span {
+    font-weight: bold;
+    color: #555;
+}
+
+.single h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.single p {
+    text-align: justify;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Menu */
+.menu {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.menu h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #0073e6;
+}
+
+.menu .post {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.menu .post img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu .post button {
+    padding: 8px 16px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.menu .post button:hover {
+    background-color: #005bb5;
+}
+
+/* Write Post */
+.write {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.write .content {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.write .content input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    font-size: 16px;
+}
+
+.write .content input:focus {
+    outline: none;
+    border-color: #0073e6;
+}
+
+.write .editorContainer {
+    height: 300px;
+    overflow: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+
+.write .editor {
+    height: 100%;
+    border: none;
+}
+
+.write .menu {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.write .menu .item {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    color: #555;
+}
+
+.write .menu .file {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #0073e6;
+}
+
+.write .menu .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.write .menu .buttons button {
+    cursor: pointer;
+    padding: 8px 16px;
+    border: 1px solid #0073e6;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.write .menu .buttons button:hover {
+    background-color: #005bb5;
+}
+
+.write .menu .cat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
